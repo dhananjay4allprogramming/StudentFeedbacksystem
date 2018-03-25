@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Sucess</title>
+        <link href="bootstrap/css/bootstrap.min.css">
+        <style>
+            *{
+                text-align: center;
+                font-family: "Lato", sans-serif;
+                 background: #1E547F;
+                 color: #fff;
+            }
+            p{
+                font-size: 40px;
+                font-family: fantasy;
+                margin-top: 20%;
+            }
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                opacity: 0.5;
+                transition: opacity 300ms ease-in-out;
+            }
+            a:hover{
+                opacity:1;
+            }
+             .line{
+                height: 1px;
+                 width: 0px;
+                 background: #fff;
+                 margin-left: 46.5%;
+                 animation: lin 600ms forwards;
+            }
+            @keyframes lin{
+                0%{
+                    width: 0px;
+                }
+                100%{
+                    width: 120px;
+                }
+            }
+/*            .line:hover{ */
+/*              animation : move 1000ms forwards; */
+/*            } */
+/*             @keyframes move{ */
+/*                 0%{ */
+/*                     width: 120px; */
+/*                 } */
+/*                 50%{ */
+/*                    width: 0px; */
+/*                 } */
+/*                 100%{ */
+/*                     width: 120px; */
+/*                 } */
+/*             } */
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-3">
+                    <p>Thank you for giving your feedback</p>
+                </div>
+                <div class="col-sm-5">
+                		<a href="stulogin.html">&larr; Back to Login</a>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

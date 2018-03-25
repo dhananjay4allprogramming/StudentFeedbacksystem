@@ -1,0 +1,111 @@
+<html>
+    <head>
+    
+        <meta name="viewport" content="width-device-width,initial-scale-1">
+        <title>Student Feedback System</title>
+     <!--   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+        <style>
+            *{
+                padding: 0px;
+                margin: 0px;
+            }
+            .head{
+                text-align: center;
+                color: #fff;
+                background: #0b182d;
+                width: 100%;
+                height: 50px;
+                font-size: 30px;
+                margin-top: 5px;
+            }
+            .custom1{
+                overflow: hidden;
+                height: 600px;
+                margin: 0px;
+                padding: 0px;
+                cursor: pointer;
+                width: 50%;
+                float: left;
+            }
+            .custom2{
+                overflow: hidden;
+                height: 600px;
+                margin: 0px;
+                padding: 0px;
+                cursor: pointer;
+                width: 50%;
+                float: left;
+            }
+            .image{
+                width: 100%;
+                height: 100%;
+            }
+            .custom1:hover #img1{
+                animation: sca 1000ms forwards;
+            }
+            @keyframes sca{
+                0%{
+                    transform: scale(1) rotate(0deg);
+                }
+                100%{
+                    transform: scale(1.5) rotate(20deg);
+                }
+            }
+            .custom2:hover #img2{
+                animation: sca1 1000ms forwards;
+            }
+            @keyframes sca1{
+                0%{
+                    transform: scale(1) rotate(0deg);
+                }
+                100%{
+                    transform: scale(1.5) rotate(-20deg);
+                }
+            }
+            .text{
+                font-size: 50px;
+                color: #fff;
+                margin-top: -20%;
+                position: fixed;
+                margin-left: 15%;
+                transition: color 1000ms forwards;
+            }
+            .text:hover{
+                color: burlywood;
+            }
+            .container [class^="col"] {
+              padding-left: 0;
+              padding-right: 0;
+             }
+            
+/*
+            .row{
+                padding-left: 0px;
+                padding-right: 0px;
+                margin-left: 0px;
+                margin-top: 0px;
+            }
+*/
+        </style>
+    </head>
+    <body>
+      <div class="container">
+          <div class="row">
+            <p class="head">Student Feedback System</p>
+          </div>
+         <div class="row">
+             <div class="col-md-6">
+                 <div class="custom1">
+                    <img src="lapi1.jpg" class="image" id="img1"/>
+                     <a href="stulogin.html"><p class="text">Student Login</p></a>
+                 </div></div>
+             <div class="col-md-6"><div class="custom2">
+                    <img src="men.jpg" class="image" id="img2"/>
+                 <a href="Adminlogin.html"><p class="text">Admin Login</p></a>
+                 </div></div>
+         </div>  
+      </div>
+        <script src="jquery-3.1.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
